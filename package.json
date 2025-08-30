@@ -1,0 +1,64 @@
+{
+  "name": "symbiotic-layerzero-dvn",
+  "version": "1.0.0",
+  "description": "Stake-backed DVN for LayerZero using Symbiotic's economic security",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network sepolia",
+    "test": "hardhat test",
+    "worker:start": "ts-node src/dvn-worker.ts",
+    "worker:dev": "nodemon --exec ts-node src/dvn-worker.ts",
+    "verify": "hardhat verify",
+    "clean": "hardhat clean && rm -rf dist",
+    "lint": "eslint . --ext .ts,.js",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@layerzerolabs/lz-evm-protocol-v2": "^2.0.0",
+    "@layerzerolabs/lz-evm-messagelib-v2": "^2.0.0",
+    "@layerzerolabs/lz-evm-oapp-v2": "^2.0.0",
+    "ethers": "^6.9.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "winston": "^3.11.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/node": "^20.10.0",
+    "@types/express": "^4.17.21",
+    "chai": "^4.3.10",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.0",
+    "nodemon": "^3.0.2",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/symbiotic-layerzero-dvn"
+  },
+  "keywords": [
+    "layerzero",
+    "dvn",
+    "symbiotic",
+    "cross-chain",
+    "blockchain",
+    "ethereum",
+    "solidity"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

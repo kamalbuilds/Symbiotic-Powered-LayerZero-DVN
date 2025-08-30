@@ -1,0 +1,92 @@
+{
+  "network": "ethereum-mainnet",
+  "verifyContracts": true,
+  "etherscanApiKey": "YOUR_ETHERSCAN_API_KEY",
+  
+  "symbiotic": {
+    "networkId": 1,
+    "vaultFactory": "0x0000000000000000000000000000000000000000",
+    "operatorRegistry": "0x0000000000000000000000000000000000000000",
+    "quorumThreshold": 6667,
+    "minValidatorStake": "100000000000000000000"
+  },
+  
+  "dvn": {
+    "worker": "0x0000000000000000000000000000000000000000",
+    "treasury": "0x0000000000000000000000000000000000000000"
+  },
+  
+  "supportedChains": [
+    {
+      "name": "Ethereum",
+      "eid": 101,
+      "chainId": 1,
+      "ulnAddress": "0x0000000000000000000000000000000000000000",
+      "messageLib": "0x0000000000000000000000000000000000000000",
+      "baseFee": "0.001",
+      "perByteRate": "0.000001",
+      "confirmationMultiplier": "0.0001"
+    },
+    {
+      "name": "BSC",
+      "eid": 102,
+      "chainId": 56,
+      "ulnAddress": "0x0000000000000000000000000000000000000000",
+      "messageLib": "0x0000000000000000000000000000000000000000",
+      "baseFee": "0.0005",
+      "perByteRate": "0.0000005",
+      "confirmationMultiplier": "0.00005"
+    },
+    {
+      "name": "Polygon",
+      "eid": 109,
+      "chainId": 137,
+      "ulnAddress": "0x0000000000000000000000000000000000000000",
+      "messageLib": "0x0000000000000000000000000000000000000000",
+      "baseFee": "0.0001",
+      "perByteRate": "0.0000001",
+      "confirmationMultiplier": "0.00001"
+    },
+    {
+      "name": "Arbitrum",
+      "eid": 110,
+      "chainId": 42161,
+      "ulnAddress": "0x0000000000000000000000000000000000000000",
+      "messageLib": "0x0000000000000000000000000000000000000000",
+      "baseFee": "0.0001",
+      "perByteRate": "0.0000001",
+      "confirmationMultiplier": "0.00001"
+    },
+    {
+      "name": "Optimism",
+      "eid": 111,
+      "chainId": 10,
+      "ulnAddress": "0x0000000000000000000000000000000000000000",
+      "messageLib": "0x0000000000000000000000000000000000000000",
+      "baseFee": "0.0001",
+      "perByteRate": "0.0000001",
+      "confirmationMultiplier": "0.00001"
+    }
+  ],
+  
+  "crossChainSettlements": [
+    {
+      "name": "BSC",
+      "chainId": 56,
+      "rpcUrl": "https://bsc-dataseed.binance.org/"
+    },
+    {
+      "name": "Polygon",
+      "chainId": 137,
+      "rpcUrl": "https://polygon-rpc.com/"
+    }
+  ],
+  
+  "initialValidators": [
+    {
+      "address": "0x0000000000000000000000000000000000000000",
+      "blsPublicKey": "0x",
+      "proofOfPossession": "0x"
+    }
+  ]
+}
